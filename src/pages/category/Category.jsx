@@ -13,7 +13,7 @@ const Category = () => {
   useEffect(() => {
     dispatch(featchPostsCategory(category));
     window.scrollTo(0, 0);
-  }, [category]);
+  }, [category, dispatch]);
 
   return (
     <section className="category">

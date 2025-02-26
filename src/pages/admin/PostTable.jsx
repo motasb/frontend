@@ -15,7 +15,7 @@ const PostsTable = () => {
 
   useEffect(()=>{
     dispatch(getAllPosts());
-  },[])
+  },[dispatch])
 
    // Delete User handler
    const deletePostHandler = (postId)=>{
